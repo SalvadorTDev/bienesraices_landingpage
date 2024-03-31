@@ -1,0 +1,18 @@
+.boton-secundario {
+    @include boton($azul, inline-block);
+}
+.boton-secundario-block {
+    @include boton($azul, block);
+}
+.boton-rojo {
+    @include boton($rojo, inline-block);
+}
+.boton-rojo-delete {
+    @include boton($rojo, inline-block);
+}
+.boton-verde-block {
+    @include boton($verde, block)
+}
+.boton-amarillo-update {
+    @include boton(darken($amarillo, 20), inline-block)
+}

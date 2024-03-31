@@ -1,0 +1,24 @@
+.footer {
+    background-color: $acero;
+    padding-top: calc($separacion / 2);
+    margin-bottom: 0;
+
+    .contenido-footer {
+        padding: $separacion;
+    }
+    .copyright {
+        color: $blanco;
+        text-align: center;
+        padding: 1rem 0;
+        margin: 0;
+        font-size: 1.4rem;
+        @include tablet {
+            font-size: 1.6rem;
+        }
+    }
+    .navegacion {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0;
+    }
+}

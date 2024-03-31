@@ -1,0 +1,91 @@
+.barra {
+    margin-top: 2rem;
+    justify-content: space-between;
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+    .bloque-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.logo {
+    color: $blanco;
+    
+    h1 {
+        font-weight: 300;
+        font-family: $fuenteTitulo;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 3rem;
+        @include tablet {
+        font-size: 3.8rem;
+        }
+    }
+    span {
+        font-weight: 900;
+    }
+}
+.navegacion {
+    margin-top: -25rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .5s linear, margin-top .5s ease-in-out;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgba(240, 240, 240, 0.5);
+    border-radius: .5rem;
+    
+    @include tablet {
+        margin-top: 0;
+        display: flex;
+        background-color: transparent;
+        flex-direction: row;
+        column-gap: 3rem;
+        align-items: center;
+        opacity: 1;
+        visibility: visible;
+    }
+    a {
+        color: $blanco;
+        text-decoration: none;
+        font-size: 1.6rem;
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        @include tablet {
+            padding: 0;
+            font-size: 1.8rem;
+        }
+    }
+    img {
+        width: 3.5rem;
+        cursor: pointer;
+        margin: 0 auto;
+        padding: 1rem 0;
+        background-color: transparent;
+        @include tablet {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+.mobile-menu {
+    display: flex;
+    @include tablet {
+        display: none;
+    }
+    img {
+        width: 3.5rem;
+    }
+}
+
+.mostrar {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+}
